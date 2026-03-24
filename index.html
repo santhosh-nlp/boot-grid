@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Grid Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    .box {
+      background: lightblue;
+      border: 2px solid black;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1 class="text-center my-4">Bootstrap Grid Project</h1>
+
+  <!-- 1. Three Equal Columns -->
+  <h3>1. Equal Columns</h3>
+  <div class="row">
+    <div class="col box">Col 1</div>
+    <div class="col box">Col 2</div>
+    <div class="col box">Col 3</div>
+  </div>
+
+  <!-- 2. Two Unequal Columns -->
+  <h3 class="mt-4">2. Unequal Columns</h3>
+  <div class="row">
+    <div class="col-4 box">4 Columns</div>
+    <div class="col-8 box">8 Columns</div>
+  </div>
+
+  <!-- 3. Responsive Columns -->
+  <h3 class="mt-4">3. Responsive Columns</h3>
+  <div class="row">
+    <div class="col-sm-4 box">col-sm-4</div>
+    <div class="col-sm-4 box">col-sm-4</div>
+    <div class="col-sm-4 box">col-sm-4</div>
+  </div>
+
+  <!-- 4. Mixed Layout -->
+  <h3 class="mt-4">4. Mixed Layout</h3>
+  <div class="row">
+    <div class="col-md-3 box">3</div>
+    <div class="col-md-6 box">6</div>
+    <div class="col-md-3 box">3</div>
+  </div>
+
+  <!-- 5. Auto Layout -->
+  <h3 class="mt-4">5. Auto Layout</h3>
+  <div class="row">
+    <div class="col box">Auto</div>
+    <div class="col box">Auto</div>
+    <div class="col box">Auto</div>
+    <div class="col box">Auto</div>
+  </div>
+
+  <!-- 6. Nested Grid -->
+  <h3 class="mt-4">6. Nested Grid</h3>
+  <div class="row">
+    <div class="col-6 box">
+      Parent
+      <div class="row mt-2">
+        <div class="col-6 box">Child 1</div>
+        <div class="col-6 box">Child 2</div>
+      </div>
+    </div>
+    <div class="col-6 box">Parent 2</div>
+  </div>
+
+</div>
+
+</body>
+</html>
